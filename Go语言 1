@@ -1,5 +1,4 @@
-结构体
-
+结构体：
 package main
 
 import "fmt"
