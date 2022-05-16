@@ -1,0 +1,20 @@
+结构体
+
+package main
+
+import "fmt"
+
+type People struct {
+	Name string
+	Age  int
+}
+
+func main() {
+	var peo People
+	//按照结构体中属性的顺序进行赋值,可以省略属性名称
+	peo = People{"smallming", 17}
+	fmt.Println(peo)
+	//明确指定给哪些属性赋值.可以都赋值,也可以只给其中一部分赋值
+	peo = People{Age: 18, Name: "佳明哥"}
+	fmt.Println(peo)
+}
